@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Heading and navbar design */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow:  0 0 25px orangered,
+                  0 0 50px orangered;
+                  transform: scale(1.1);
+}
+span{
+    color: orangered;
+}
+ .navbar a{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+ }
+ .navbar a:hover,
+ .navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+ }
+ .contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+ }
+ .contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+ }
+ .home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    padding: 30px 12% 0;
+ }
+ .home-contet{
+    max-width: 800px;
+ }
+ .home-contet h3{
+    font-size: 42px;
+ }
+ .home-contet h1{
+    font-size: 65px;
+    line-height: 1.2;
+ }
+ .home-contet p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+ }
+ .btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+ }
+ .btn-1{
+
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+ }
+ .btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+ }
+ .btn-2{
+    padding: 15px 20px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+ }
+ .btn-2:hover{
+    background-color: white;
+     color: orangered;
+ }
+ .img-box img{
+    border-radius: 50%;
+    height: 550px;
+    width: 550px;
+ }
+
+
+ /* scroll bar design */
+ ::-webkit-scrollbar{
+    width: 15px;
+ }
+ ::-webkit-scrollbar-thumb{
+    background-color: orangered;
+ }
+ ::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+ }
+
+ /* About me section */
+ .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10rem;
+    background: black;
+
+
+
+ }
+ .about-img img{
+    position: relative;
+    height: 550px;
+    width: 550px;
+    box-shadow: 0 0 25px orangered,
+                0 0 50px orangered;
+                border-radius: 50%;
+
+ }
+ .about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+
+ }
+.about-content h3{
+    font-size: 62px;
+    color: white;
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2rem 0 3rem;
+}
